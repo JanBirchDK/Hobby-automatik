@@ -28,10 +28,11 @@ Til Arduino platformen er der skabt mulighed for at bygge en applikation til aut
 Applikationen:
 - Er fleksibel og kan løbende tilpasses, når nye krav og ønsker opstår.
 - Bygget til styring, regulering og overvågning. Tilstandsmaskine udfører den overordnede koordination.
-- Består primært af en række softwarekomponenter, der blot skal konfigureres. 
+- Består primært af en række softwarekomponenter, der blot skal sættes ind og konfigureres.
+. 
 	
-Består et anlæg af flere delsystemer, er det tanken at der bygges en applikation per delsystem. Delsystemerne bindes sammen med kommunikation.
-En Arduino applikation bliver specifik og møntet på et formål og ikke generelt anvendelig.
+Består et anlæg af flere delsystemer, er det tanken at der bygges en applikation og der bruges en Arduino per delsystem. Delsystemerne bindes sammen med kommunikation. En Arduino applikation bliver specifik og møntet på et formål og gøres ikke generelt anvendelig.
+
 
 ## Arduino fordele og ulemper
 **Fordele**
@@ -46,6 +47,8 @@ En Arduino applikation bliver specifik og møntet på et formål og ikke generel
 Ulemper
 - Programmeringssproget er C eller C++ og derfor low level og kan være vanskelig at programmere.
 - Arduino har 2048 byte memory til data. Så der skal holdes øje med allokering af data.
-- Vær obs på at allokere alle data inklusiv objekter ved programopstart, det forebygger runtime fejl, når memory er fyldt op..
+- Vær obs på at allokere alle data inklusiv objekter ved programopstart.
+
+Håndteres memory run-time giver det risiko for at fylde memory op, som derefter udløser stop i afvikling af applikationen. Derfor allokeres alle data ved programstart.
 
 Det er standard at opdele kildekode i en <navn>.h og en  <navn>.cpp fil. Separat c++ fil giver mulighed for at udskifte kildekode til andre platforme. C++ til Arduino har en række begrænsninger, som gør det irellevant at gøre koden portabel. Derfor bliver kildekoden kun bygget med <navn>.ino og <navn>.h filer.
