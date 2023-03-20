@@ -12,7 +12,7 @@ Disse styringer er eksempler på automatik, det er sjovt at fremstille som gør 
 En Arduino er velegnet til at udføre styringen. Den har en masse indgange og udgange og det er nemt at tilslutte sensorer, motorer, relæer, lamper med mere.
 Programmering af en Arduino gøres endnu lettere, ved at bygge med en samling software komponenter. Komponenterne bliver sat ind i programmet, konfigureret og så kører styringen.
 ## Repository indeholder
-Der er vedlagt en beskrivelse af en automatik applikation. Dens formål, rammer og betingelser.
+Struktur i en automatik applikation er beskrevet i "Arduino applikation". Applikationens formål, rammer og betingelser er forklaret.
 
 Dette repository indeholder en samling af software komponenter. Komponenter er samlet i biblioteker, hver med deres specifikke formål.
 
