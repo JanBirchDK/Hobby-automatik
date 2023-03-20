@@ -20,7 +20,7 @@ Beskrivelse af biblioteker ligger i mappen "Biblioteker":
 - Har en beskrivelse
 - Et UML klassediagram
 
-Kildekode til import i Arduino libraries ligger i mappen "libraries".<br />Installation i Arduino udviklingsmiljø er beskrevet i "Vejledning til bibliotek".
+Kildekode til import i Arduino libraries ligger i mappen "libraries".<br />Installation i Arduino udviklingsmiljø er beskrevet i "Bibliotek vejledning".
 
 DemoApp viser et eksempel på en styringsautomatik, der er bygget med bibliotekets komponenter.
 
