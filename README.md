@@ -7,7 +7,7 @@ Indendørs klimastyring. En styring der måler fugtighed, temperatur og CO2. Ud 
 
 En automatisk skydedør. Når man går mod døren åbner den automatisk og lukker igen, når man er gået igennem.
 
-Disse styringer er eksempler på automatik, der er sjovt at fremstille som gør det selv.
+Disse styringer er eksempler på automatik, det er sjovt at fremstille som gør det selv.
 
 En Arduino er velegnet til at udføre styringen. Den har en masse indgange og udgange og det er nemt at tilslutte sensorer, motorer, relæer, lamper med mere.
 Programmering af en Arduino gøres endnu lettere, ved at bygge med en samling software komponenter. Komponenterne bliver sat ind i programmet, konfigureret og så kører styringen.
@@ -16,12 +16,13 @@ Der er vedlagt en beskrivelse af en automatik applikation. Dens formål, rammer 
 
 Dette repository indeholder en samling af software komponenter. Komponenter er samlet i biblioteker, hver med deres specifikke formål.
 
-Hvert bibliotek:
+Beskrivelse af biblioteker ligger i mappen "Biblioteker":
 - Har en beskrivelse
 - Et UML klassediagram
-- Kildekode til import i Arduino libraries
 
-*Repository bliver uploaded løbende over de næste 2 uger.*
+Kildekode til import i Arduino libraries ligger i mappen "libraries".<br />Installation i Arduino udviklingsmiljø er beskrevet i "Vejledning til bibliotek".
+
+DemoApp viser et eksempel på en styringsautomatik, der er bygget med bibliotekets komponenter.
 
 ## Om Arduino platformen
 Til Arduino platformen er der skabt mulighed for at bygge en applikation til automatisering af mindre anlæg.
@@ -29,10 +30,8 @@ Applikationen:
 - Er fleksibel og kan løbende tilpasses, når nye krav og ønsker opstår.
 - Bygget til styring, regulering og overvågning. Tilstandsmaskine udfører den overordnede koordination.
 - Består primært af en række softwarekomponenter, der blot skal sættes ind og konfigureres.
-. 
 	
 Består et anlæg af flere delsystemer, er det tanken at der bygges en applikation og der bruges en Arduino per delsystem. Delsystemerne bindes sammen med kommunikation. En Arduino applikation bliver specifik og møntet på et formål og gøres ikke generelt anvendelig.
-
 
 ## Arduino fordele og ulemper
 **Fordele**
