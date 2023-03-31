@@ -24,6 +24,12 @@ Kildekode til import i Arduino libraries ligger i mappen "libraries".<br />Insta
 
 DemoApp viser et eksempel på en styringsautomatik, der er bygget med bibliotekets komponenter.
 
+## Versionshistorik
+| Version      | Dato |Beskrivelse |
+| ----------- | ----------- |----------- |
+| 1.0     | 20/3 2023       |Initial udgave       |
+| 1.1   | 31/3 2023 | Fejlretning i bibliotek: JBManual, JBCtrlUnits        |
+
 ## Om Arduino platformen
 Til Arduino platformen er der skabt mulighed for at bygge en applikation til automatisering af mindre anlæg.
 Applikationen:
