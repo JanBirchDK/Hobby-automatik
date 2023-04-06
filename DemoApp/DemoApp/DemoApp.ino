@@ -1,10 +1,10 @@
 /*
  * Projekt: Generelle Arduino biblioteker
  * Produkt: Demo applikation
- * Version: 1.0
+ * Version: 1.1
  * Type: Program
  * Programmeret af: Jan Birch
- * Opdateret: 14-03-2023
+ * Opdateret: 05-04-2023
  * GNU General Public License version 3
  * This file is part of "Demo applikation".
  * 
@@ -111,9 +111,9 @@ void setup() {
   rumKnapVFlankDet.begin(ON, EDGEDOWN);
   ledelysFlankDet.begin(OFF, EDGEUP);
   rumKnapHFlankDet.begin(ON, EDGEDOWN);
-  rumKnapVButton.setDigitalFunktion(&rumKnapVFlankDet);
-  ledelysButton.setDigitalFunktion(&ledelysFlankDet);
-  rumKnapHButton.setDigitalFunktion(&rumKnapHFlankDet);
+  rumKnapVButton.setDigitalFunction(&rumKnapVFlankDet);
+  ledelysButton.setDigitalFunction(&ledelysFlankDet);
+  rumKnapHButton.setDigitalFunction(&rumKnapHFlankDet);
 // Opsætning af sensor
   ledelysSensor.begin(&analogParrInDrv, LyssensorPort);
 // Opsætning af styrenheder
