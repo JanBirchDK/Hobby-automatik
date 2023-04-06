@@ -1,10 +1,10 @@
 /*
  * Projekt: Generelle Arduino biblioteker
  * Produkt: Styrenheder
- * Version: 1.0
+ * Version: 1.2
  * Type: Bibliotek
  * Programmeret af: Jan Birch
- * Opdateret: 12-03-2023
+ * Opdateret: 06-04-2023
  * GNU General Public License version 3
  * This file is part of "Styrenheder".
  * 
@@ -111,12 +111,11 @@ void t_OnOffOut::to(byte state) {
 void t_WithBlinkOut::begin(t_OutputDriver *driver, unsigned int portNo, byte state=OFF) {
   setPort(driver, portNo);
   this->state = state;
-  to(state);
 }
 
 void t_WithBlinkOut::doClockCycle(void) {
   if (driver == nullptr) return;
-  bool driverState = (state == ON)? blinkerNotification(MASTERBLINKERNO): LOW;
+  bool driverState = (state == BLINK)? blinkerNotification(MASTERBLINKERNO): LOW;
   driver->write(portNo, driverState);
 }
 

@@ -1,10 +1,10 @@
 /*
  * Projekt: Generelle Arduino biblioteker
  * Produkt: Kerne med tidsstyring, ure og timere
- * Version: 1.0
+ * Version: 1.1
  * Type: Bibliotek
  * Programmeret af: Jan Birch
- * Opdateret: 18-04-2021
+ * Opdateret: 05-04-2023
  * GNU General Public License version 3
  * This file is part of Kerne med tidsstyring, ure og timere.
  * 
@@ -36,6 +36,8 @@ enum {MSEC, SECONDS};
 enum {OFF, ON};
 // Masterblinker låses på eget nummer
 enum {MASTERBLINKERNO=127};
+// Enheder med blink bruger status
+enum {BLINK=2};
 
 // Ansvar: Klokken varetager taktslaget til polling.
 // Det er en ventefunktion som sørger for synkronisering med arduino klokken
