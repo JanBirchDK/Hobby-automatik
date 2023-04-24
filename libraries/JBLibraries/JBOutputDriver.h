@@ -23,6 +23,7 @@
  * 
  * Noter:
  * Se koncept og specifikation for en detaljeret beskrivelse af programmet, formål og anvendelse.
+ * Version 1.1: Samling af outputdrivere. Metode setPort satte udgang lav uanset argument i kald. fejlen er rettet og argument respekteres.
  */
 
 #ifndef JBOutputDriver_h

@@ -23,6 +23,9 @@
  *  
  * Noter: 
  * Se koncept og specifikation for en detaljeret beskrivelse af programmet, formål og anvendelse.
+ * Version 1.1: Styreenhed med blink: Ved sluk, slukkede udgang ikke men gik på fast lys. Det er rettet til sluk.
+ * Version 1.2: Styreenhed med blink rettet færdigt.
+ * Version 1.3: Styreenhed med blink. Metode to optimeret, tjek for driver initialiseret er fjernet.
  */
 
 #ifndef JBCtrlUnits_h
