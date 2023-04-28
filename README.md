@@ -31,7 +31,7 @@ DemoApp viser et eksempel på en styringsautomatik, der er bygget med biblioteke
 | 1.1   | 31/3 2023 | Fejl rettet i bibliotek: JBManual, JBCtrlUnits        |
 | 1.1   | 3/4 2023 | Mangler fejlrettelse i DemoApp        |
 | 1.2   | 6/4 2023 | DemoApp er opdateret. Biblioteker er klar til styringer med blink       |
-| 1.3   | 28/4 2023 | Dokumentation er opdateret. Fejl i output-drivere er rettet|
+| 1.3   | 28/4 2023 | Dokumentation er opdateret. Fejl rettet og optimeringer i output biblioteker|
 
 ## Om Arduino platformen
 Til Arduino platformen er der skabt mulighed for at bygge en applikation til automatisering af mindre anlæg.
