@@ -1,10 +1,10 @@
 /*
  * Projekt: Generelle Arduino biblioteker
  * Produkt: Styrenheder
- * Version: 1.2
+ * Version: 1.3
  * Type: Bibliotek
  * Programmeret af: Jan Birch
- * Opdateret: 06-04-2023
+ * Opdateret: 20-04-2023
  * GNU General Public License version 3
  * This file is part of "Styrenheder".
  * 
@@ -23,6 +23,9 @@
  *  
  * Noter: 
  * Se koncept og specifikation for en detaljeret beskrivelse af programmet, formål og anvendelse.
+ * Version 1.1: Styreenhed med blink: Ved sluk, slukkede udgang ikke men gik på fast lys. Det er rettet til sluk.
+ * Version 1.2: Styreenhed med blink rettet færdigt.
+ * Version 1.3: Styreenhed med blink. Metode to optimeret, tjek for driver initialiseret er fjernet.
  */
 
 #ifndef JBCtrlUnits_h
@@ -74,7 +77,7 @@ public:
   t_WithBlinkOut(void) {}
   void begin(t_OutputDriver *driver, unsigned int portNo, byte state=OFF);
   void doClockCycle(void);
-  void to(byte state);
+  void to(byte state) {this->state = state;}
 };
 
 /*
@@ -117,11 +120,6 @@ void t_WithBlinkOut::doClockCycle(void) {
   if (driver == nullptr) return;
   bool driverState = (state == BLINK)? blinkerNotification(MASTERBLINKERNO): LOW;
   driver->write(portNo, driverState);
-}
-
-void t_WithBlinkOut::to(byte state) {
-  if (driver == nullptr) return;
-  this->state = state;
 }
 
 #endif

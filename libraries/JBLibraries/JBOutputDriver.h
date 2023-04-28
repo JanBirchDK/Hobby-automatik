@@ -1,10 +1,10 @@
 /*
  * Projekt: Generelle Arduino biblioteker
  * Produkt: Output drivere
- * Version: 1.0
+ * Version: 1.1
  * Type: Bibliotek
  * Programmeret af: Jan Birch
- * Opdateret: 14-02-2023
+ * Opdateret: 21-04-2023
  * GNU General Public License version 3
  * This file is part of Output drivere.
  * 
@@ -23,6 +23,7 @@
  * 
  * Noter:
  * Se koncept og specifikation for en detaljeret beskrivelse af programmet, formål og anvendelse.
+ * Version 1.1: Samling af outputdrivere. Metode setPort satte udgang lav uanset argument i kald. fejlen er rettet og argument respekteres.
  */
 
 #ifndef JBOutputDriver_h
@@ -97,7 +98,7 @@ void t_DigitalParrOutPort::write(bool value) {
 
 void t_DigitalParrOutDrv::setPort(unsigned int portNo, byte pin, bool value=LOW) {
   if (isValidIndex(portNo, MaxNoOutParrPorts)==true) {
-    ports[portNo].setPort(pin, value=LOW);
+    ports[portNo].setPort(pin, value);
     isSetup[portNo] = true;
   }
 }
